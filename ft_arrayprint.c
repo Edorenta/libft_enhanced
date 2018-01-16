@@ -18,10 +18,10 @@ void	ft_arrayprint(int *tab, unsigned long n, char sep)
 
 	i = -1;
 	if (tab && n)
-		while (++i <= (int)n)
+		while (++i < (int)n)
 		{
 			ft_putnbr(tab[i]);
-			if (i < (int)n)
+			if (i < (int)(n - 1))
 				ft_putchar(sep);
 		}
 }
